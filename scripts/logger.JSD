@@ -1,0 +1,20 @@
+:function AutoStartEvent
+:SearchRank 1
+
+:function enableLogger
+:SearchRank 1
+
+:function disableLogger
+:SearchRank 1
+
+:function scriptHook
+:Returns int
+:SearchRank 1
+:Param int/scriptName 
+
+:function eventTraceHook
+:SearchRank 1
+:Param string/scriptPath No Description
+:Param string/functionName No Description
+:Param string/params No Description
+
