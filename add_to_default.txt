@@ -1,0 +1,14 @@
+;; for logger
+
+use "logger.jsb"
+
+globals
+	int g_iLoggerEnabled
+
+Script toggleLogger ()
+if g_iLoggerEnabled then
+	disableLogger()
+else
+	enableLogger()
+EndIf
+EndScript
