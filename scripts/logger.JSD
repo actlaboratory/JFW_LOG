@@ -8,13 +8,17 @@
 :SearchRank 1
 
 :function scriptHook
-:Returns int
+:Returns int No Return Description
 :SearchRank 1
-:Param int/scriptName 
+:Param int/scriptName No Description
 
 :function eventTraceHook
 :SearchRank 1
 :Param string/scriptPath No Description
 :Param string/functionName No Description
 :Param string/params No Description
+
+:function addLog
+:SearchRank 1
+:Param string/text 
 
