@@ -16,9 +16,33 @@
 :SearchRank 1
 :Param string/scriptPath No Description
 :Param string/functionName No Description
-:Param string/params No Description
+:Param string/param1 No Description
+:Param string/param2 No Description
+:Param string/param3 No Description
+:Param string/param4 No Description
+:Param string/param5 No Description
+:Param string/param6 No Description
+:Param string/param7 
+:Param string/param8 
+:Param string/param9 
+:Param string/param10 
+
+:function prettifyFunctionData
+:Returns string
+:SearchRank 1
+:Param string/functionName 
+:Param string/param1 
+:Param string/param2 
+:Param string/param3 
+:Param string/param4 
+:Param string/param5 
+:Param string/param6 
+:Param string/param7 
+:Param string/param8 
+:Param string/param9 
+:Param string/param10 
 
 :function addLog
 :SearchRank 1
-:Param string/text 
+:Param string/text No Description
 
