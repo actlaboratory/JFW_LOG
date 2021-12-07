@@ -21,7 +21,7 @@ var
 if !g_oFileSystem.FolderExists (sFolderPath) then
 	g_oFileSystem.CreateFolder (sFolderPath)
 EndIf
-g_sFilePath = sFolderPath + "\\" + SysGetDate ("yyyyMMdd") + SysGetTime ("hhmmss") + ".log"
+g_sFilePath = sFolderPath + "\\" + SysGetDate ("yyyyMMdd") + SysGetTime ("HHmmss") + ".log"
 SayMessage (OT_JAWS_MESSAGE, msg_loggerEnabled_l, msg_loggerEnabled_s)
 AddHook (HK_SCRIPT, "scriptHook")
 AddHook (HK_EVENT_TRACE, "eventTraceHook")
@@ -57,6 +57,6 @@ Function addLog (string text)
 var
 	object oTextStream
 oTextStream = g_oFileSystem.OpenTextFile (g_sFilePath, 8, true)
-oTextStream.WriteLine (SysGetDate ("yyyy/MM/dd") + " " + SysGetTime ("hh:mm:ss") + "\t" + text)
+oTextStream.WriteLine (SysGetDate ("yyyy/MM/dd") + " " + SysGetTime ("HH:mm:ss") + "\t" + text)
 oTextStream.Close ()
 EndFunction
