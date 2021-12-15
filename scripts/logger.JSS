@@ -74,6 +74,7 @@ For i = ArrayLength (params) to 1 Descending
 		let iFlag = TRUE
 	EndIf
 EndFor
+let sRet = stringChopLeft (sRet, 2)
 let sRet = FormatString ("%1 (%2)", functionName, sRet)
 return sRet
 EndFunction
