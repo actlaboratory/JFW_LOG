@@ -50,7 +50,32 @@ addLog ("event\t" + data)
 EndFunction
 
 Function prettifyFunctionData (string functionName, string param1, string param2, string param3, string param4, string param5, string param6, string param7, string param8, string param9, string param10)
-return functionName + "(" + param1 + ", " + param2 + ", " + param3 + ", " + param4 + ", " + param5 + ", " + param6 + ", " + param7 + ", " + param8 + ", " + param9 + ", " + param10 + ")"
+var
+	String sRet,
+	VariantArray params,
+	Int i,
+	Int iFlag
+let params = New VariantArray[10]
+let params[1] = param1
+let params[2] = param2
+let params[3] = param3
+let params[4] = param4
+let params[5] = param5
+let params[6] = param6
+let params[7] = param7
+let params[8] = param8
+let params[9] = param9
+let params[10] = param10
+let sRet = ""
+let iFlag = FALSE
+For i = ArrayLength (params) to 1 Descending
+	If !StringIsBlank (params[i]) || iFlag then
+		let sRet = FormatString (", %1%2", params[i], sRet)
+		let iFlag = TRUE
+	EndIf
+EndFor
+let sRet = FormatString ("%1 (%2)", functionName, sRet)
+return sRet
 EndFunction
 
 Function addLog (string text)
