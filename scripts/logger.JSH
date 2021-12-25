@@ -3,4 +3,5 @@
 ; Written by Kazto Kitabatake(Accessible Tools Laboratory)
 
 const
- c_logDir = "logs"
+ c_logDir = "logs",
+	c_fileSystemObject = "Scripting.FileSystemObject"

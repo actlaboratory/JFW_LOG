@@ -11,7 +11,7 @@ globals
 	int g_iLoggerEnabled
 
 Function AutoStartEvent ()
-g_oFileSystem = CreateObject ("Scripting.FileSystemObject")
+g_oFileSystem = CreateObject (c_fileSystemObject)
 g_iLoggerEnabled = FALSE
 EndFunction
 
