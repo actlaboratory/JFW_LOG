@@ -22,31 +22,33 @@
 :Param string/param4 No Description
 :Param string/param5 No Description
 :Param string/param6 No Description
-:Param string/param7 
-:Param string/param8 
-:Param string/param9 
-:Param string/param10 
+:Param string/param7 No Description
+:Param string/param8 No Description
+:Param string/param9 No Description
+:Param string/param10 No Description
 
 :function prettifyFunctionData
-:Returns string
+:Returns string No Return Description
 :SearchRank 1
-:Param string/functionName 
-:Param string/param1 
-:Param string/param2 
-:Param string/param3 
-:Param string/param4 
-:Param string/param5 
-:Param string/param6 
-:Param string/param7 
-:Param string/param8 
-:Param string/param9 
-:Param string/param10 
+:Param string/functionName No Description
+:Param string/param1 No Description
+:Param string/param2 No Description
+:Param string/param3 No Description
+:Param string/param4 No Description
+:Param string/param5 No Description
+:Param string/param6 No Description
+:Param string/param7 No Description
+:Param string/param8 No Description
+:Param string/param9 No Description
+:Param string/param10 No Description
 
 :function addLog
 :SearchRank 1
-:Param string/text No Description
+:Param string/sType 
+:Param string/sText 
 
 :script toggleLogger
 :SearchRank 1
 :Synopsis ログ出力の切り替え
 :Description ログ出力機能の有効・無効を切り替えます。
+

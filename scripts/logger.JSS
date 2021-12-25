@@ -37,7 +37,7 @@ EndFunction
 
 Function scriptHook (string scriptName)
 ;SayString (scriptName)
-addLog ("script\t" + scriptName)
+addLog (c_logType_script, scriptName)
 return TRUE
 EndFunction
 
@@ -46,7 +46,7 @@ var
 	string data
 data = prettifyFunctionData(functionName, param1, param2, param3, param4, param5, param6, param7, param8, param9, param10)
 ;SayString (data)
-addLog ("event\t" + data)
+addLog (c_logType_event, data)
 EndFunction
 
 Function prettifyFunctionData (string functionName, string param1, string param2, string param3, string param4, string param5, string param6, string param7, string param8, string param9, string param10)
@@ -79,10 +79,10 @@ let sRet = FormatString ("%1 (%2)", functionName, sRet)
 return sRet
 EndFunction
 
-Function addLog (string text)
+Function addLog (string sType, string sText)
 var
 	object oTextStream
 oTextStream = g_oFileSystem.OpenTextFile (g_sFilePath, 8, true)
-oTextStream.WriteLine (SysGetDate ("yyyy/MM/dd") + " " + SysGetTime ("HH:mm:ss") + "\t" + text)
+oTextStream.WriteLine (SysGetDate ("yyyy/MM/dd") + " " + SysGetTime ("HH:mm:ss") + "\t" + sType + "\t" + sText)
 oTextStream.Close ()
 EndFunction

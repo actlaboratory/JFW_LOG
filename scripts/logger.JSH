@@ -4,4 +4,6 @@
 
 const
  c_logDir = "logs",
-	c_fileSystemObject = "Scripting.FileSystemObject"
+	c_fileSystemObject = "Scripting.FileSystemObject",
+	c_logType_script = "script",
+	c_logType_event = "event"
