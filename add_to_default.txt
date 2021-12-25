@@ -1,3 +1,4 @@
+
 ;; for logger
 
 use "logger.jsb"
@@ -12,3 +13,4 @@ else
 	enableLogger()
 EndIf
 EndScript
+;; end logger
