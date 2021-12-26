@@ -1,5 +1,6 @@
-; JAWS for Windows Logging Tool
+﻿; JAWS for Windows Logging Tool
 ; Version: 1.0.0
+; Released: 2021-12-31
 ; Written by Kazto Kitabatake(Accessible Tools Laboratory)
 ; JAWS for Windows Header File
 

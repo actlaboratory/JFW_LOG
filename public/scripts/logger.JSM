@@ -1,19 +1,20 @@
-; JAWS for Windows Logging Tool
+ï»¿; JAWS for Windows Logging Tool
 ; Version: 1.0.0
+; Released: 2021-12-31
 ; Written by Kazto Kitabatake(Accessible Tools Laboratory)
 ; JAWS for Windows Message File
 
 Messages
 @msg_loggerEnabled_s
-ƒƒOo—ÍŠJn
+ãƒ­ã‚°å‡ºåŠ›é–‹å§‹
 @@
 @msg_loggerEnabled_l
-ƒfƒoƒbƒOƒƒO‚Ìo—Í‚ğŠJn‚µ‚Ü‚·
+ãƒ‡ãƒãƒƒã‚°ãƒ­ã‚°ã®å‡ºåŠ›ã‚’é–‹å§‹ã—ã¾ã™
 @@
 @msg_loggerDisabled_s
-ƒƒOo—Í’â~
+ãƒ­ã‚°å‡ºåŠ›åœæ­¢
 @@
 @msg_loggerDisabled_l
-ƒfƒoƒbƒOƒƒO‚Ìo—Í‚ğ’â~‚µ‚Ü‚·
+ãƒ‡ãƒãƒƒã‚°ãƒ­ã‚°ã®å‡ºåŠ›ã‚’åœæ­¢ã—ã¾ã™
 @@
 EndMessages

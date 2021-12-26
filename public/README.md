@@ -1,8 +1,10 @@
-# JAWS_logger
+# JAWS_logger: JAWS for Windows Logging Tool
 
 バージョン:　　ver.1.0.0
 
-JAWS for Windows Logging Tool
+リリース:　　　2021-12-31
+
+ライセンス：MIT License
 
 ## 概要
 
