@@ -1,6 +1,6 @@
 ﻿; JAWS for Windows Logging Tool
-; Version: 0.5.0
-; Released: 2021-12-26
+; Version: 1.0.0
+; Released: 2021-12-31
 ; Written by Kazto Kitabatake(Accessible Tools Laboratory)
 
 include "HJConst.jsh"
