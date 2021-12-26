@@ -1,6 +1,7 @@
-; JAWS for Windows Message File
 ; JAWS for Windows Logging Tool
+; Version: 1.0.0
 ; Written by Kazto Kitabatake(Accessible Tools Laboratory)
+; JAWS for Windows Message File
 
 Messages
 @msg_loggerEnabled_s

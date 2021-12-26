@@ -1,4 +1,5 @@
 ; JAWS for Windows Logging Tool
+; Version: 1.0.0
 ; Written by Kazto Kitabatake(Accessible Tools Laboratory)
 
 include "HJConst.jsh"

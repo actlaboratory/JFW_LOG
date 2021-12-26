@@ -1,5 +1,7 @@
 # JAWS_logger
 
+バージョン:　　ver.1.0.0
+
 JAWS for Windows Logging Tool
 
 ## 概要
