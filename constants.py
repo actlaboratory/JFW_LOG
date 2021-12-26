@@ -6,7 +6,7 @@
 APP_FULL_NAME = "JAWS for Windows Logging Tool"#アプリケーションの完全な名前
 APP_NAME="JFW_LOG"#アプリケーションの名前
 APP_ICON = None
-APP_VERSION="1.0.0"
+APP_VERSION="0.5.0"
 APP_LAST_RELEASE_DATE="20xx-xx-xx"
 APP_COPYRIGHT_YEAR="2021"
 APP_LICENSE="MIT License"
