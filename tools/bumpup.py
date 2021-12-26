@@ -84,6 +84,7 @@ def bumpup(v, d):
 		json.dump(v,f)
 	print("Saved %s." % VERSION_FILE_NAME)
 	patch("public/readme.md",r'バージョン:　　ver\.', r'リリース:　　　', v)
+	patch("constants.py",r'APP_VERSION="', r'APP_LAST_RELEASE_DATE="', v)
 	for i in glob.glob("public/scripts/*"):
 		if os.path.splitext(i)[1].lower()[1:] not in ("jsb", "jsd"):
 			patch(i, "; Version: ", "; Released: ", v)
