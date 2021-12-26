@@ -34,8 +34,8 @@ after_test:
   - "%PYTHON%\\python.exe tools\\build.py --appveyor"
 
 artifacts:
-  - path: JFW_LOGGER-*.zip
-  - path: JFW_LOGGER-*.json
+  - path: JFW_LOG-*.zip
+  - path: JFW_LOG-*.json
 
 deploy:
   - provider: GitHub
