@@ -42,7 +42,7 @@ deploy:
     description: "JFW_LOGGER official release"
     auth_token:
       secure: iNSx8v6c+0TP9IyckinrvNWuX+hc7SKruOqRDl9GxdX59sZ2yqB8+UDAtqdPzKIg
-    artifact: /(JFW_LOGGER-.*\.zip)|(JFW_LOGGER-.*\.json)/
+    artifact: /(JFW_LOG-.*\.zip)|(JFW_LOG-.*\.json)/
     draft: true
     prerelease: false
     on:
