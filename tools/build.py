@@ -49,6 +49,14 @@ class build:
 		self.build(package_path, build_filename)
 		archive_name = "%s-%s.zip" % (constants.APP_NAME, build_filename)
 
+		# スナップショットでなければ
+		if build_filename == "snapshot" and not appveyor:
+			print("Skipping batch archiving because this is a local snapshot.")
+		else:
+			patch_name = self.makePatch(build_filename, archive_name)
+			if constants.UPDATER_URL is not None:
+				self.addUpdater(archive_name)
+			self.makePackageInfo(archive_name, patch_name, build_filename)
 		print("Build finished!")
 
 	def setAppVeyor(self):
@@ -83,6 +91,28 @@ class build:
 				shutil.copytree(elem, os.path.join(package_path, os.path.basename(elem)))
 		print("Compressing into package...")
 		shutil.make_archive("%s-%s" % (constants.APP_NAME, build_filename),'zip','dist')
+
+	def makePatch(self, build_filename, archive_name):
+		patch_name = None
+		if constants.BASE_PACKAGE_URL is not None:
+			print("Making patch...")
+			patch_name = "%s-%spatch" % (constants.APP_NAME, build_filename)
+			archiver=diff_archiver.DiffArchiver(constants.BASE_PACKAGE_URL, archive_name, patch_name,clean_base_package=True, skip_root = True)
+			archiver.work()
+		return patch_name
+
+	def addUpdater(self, archive_name):
+		print("downloading updater...")
+		urllib.request.urlretrieve(constants.UPDATER_URL, "updater.zip")
+		print("writing updater...")
+		with zipfile.ZipFile("updater.zip", "r") as zip:
+			zip.extractall()
+		with zipfile.ZipFile(archive_name, mode = "a") as zip:
+			zip.write("ionic.zip.dll", "%s/ionic.zip.dll" % (constants.APP_NAME))
+			zip.write("updater.exe", "%s/updater.exe" % (constants.APP_NAME))
+		os.remove("ionic.zip.dll")
+		os.remove("updater.exe")
+		os.remove("updater.zip")
 
 	def makePackageInfo(self, archive_name, patch_name, build_filename):
 		print("computing hash...")

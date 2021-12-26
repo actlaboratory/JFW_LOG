@@ -6,7 +6,7 @@
 APP_FULL_NAME = "JAWS for Windows Logging Tool"#アプリケーションの完全な名前
 APP_NAME="JAWS_Logger"#アプリケーションの名前
 APP_ICON = None
-APP_VERSION="0.0.1"
+APP_VERSION="1.0.0"
 APP_LAST_RELEASE_DATE="20xx-xx-xx"
 APP_COPYRIGHT_YEAR="2021"
 APP_LICENSE="MIT License"
@@ -20,7 +20,7 @@ BASE_PACKAGE_URL = None
 PACKAGE_CONTAIN_ITEMS = ()#パッケージに含めたいファイルやfolderがあれば指定
 NEED_HOOKS = ()#pyinstallerのhookを追加したい場合は指定
 STARTUP_FILE = "application.py"#起動用ファイルを指定
-UPDATER_URL = "https://github.com/actlaboratory/updater/releases/download/1.0.0/updater.zip"
+UPDATER_URL = None
 
 # update情報
 UPDATE_URL = "https://actlab.org/api/checkUpdate"
