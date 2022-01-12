@@ -1,0 +1,4 @@
+JAWS for Windows Logging Tool 更新履歴
+
+2022/XX/XX Version 1.X.X
+1. IME関連の関数のいくつかについて、ログ出力ができるようになりました。

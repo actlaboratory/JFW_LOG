@@ -88,3 +88,19 @@ oTextStream = g_oFileSystem.OpenTextFile (g_sFilePath, 8, true)
 oTextStream.WriteLine (SysGetDate ("yyyy/MM/dd") + " " + SysGetTime ("HH:mm:ss") + "\t" + sType + "\t" + sText)
 oTextStream.Close ()
 EndFunction
+
+String Function GetCharacterByExample (String s)
+var
+	String result
+let result = GetCharacterByExample (s)
+addLog (c_logType_ime, FormatString (c_functionLogFormat, "GetCharacterByExample", s, result))
+return result
+EndFunction
+
+String Function GetPhraseByExample (String s)
+var
+	String result
+let result = GetPhraseByExample (s)
+addLog (c_logType_ime, FormatString (c_functionLogFormat, "GetPhraseByExample", s, result))
+return result
+EndFunction

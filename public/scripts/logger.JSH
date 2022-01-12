@@ -8,4 +8,6 @@ const
  c_logDir = "logs",
 	c_fileSystemObject = "Scripting.FileSystemObject",
 	c_logType_script = "script",
-	c_logType_event = "event"
+	c_logType_event = "event",
+	c_logType_ime = "ime",
+	c_functionLogFormat = "%1 (%2) -> %3"
